@@ -3,8 +3,7 @@ body{
     padding: 0;
     background-color: #F2FBFF;
     height: auto;
-    background-image: url('./Assests/34c90ff87690892cda0a1b2f645cba8df1300468.svg');
-    background-repeat: no-repeat;
+   
     background-size: contain; 
    
 }
@@ -42,13 +41,167 @@ body{
     
 
 } 
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+
+    .likes-views-section{
+
+        display: none !important;
+        }
+        .likes-views-section-tablets{
+         
+            background-color: #F5F6FC;
+          display: block !important;
+            margin-left: 0% !important;
+            margin-right: 2% !important;
+            height: auto;
+            width: auto;
+            border: 1px solid rgb(210, 200, 200);
+        
+        }
+        .row1{
+            display: flex;
+            justify-content: space-between ;
+        }
+        .pfs{
+            display: flex !important;
+            align-items: start !important;
+            justify-content: start !important;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        
+        .likes-view-content{
+            display: flex;
+            flex-direction: column;
+        }
+        .mob-divider{
+            background-color: #b7c3c9;
+            height: 0.7px;
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 2%;
+          
+        }
+}
+
 @media only screen and (max-width: 600px){
     .Content-section{
         margin-top: 9%;
-        margin-left: 20px !important ;
-        margin-right: 20px !important;
+        margin-left: 6px !important ;
+        margin-right: 4px !important;
       
     }
+    .divider{
+        
+     width: 90% !important;
+        margin-top: 5% !important;
+        margin-bottom: 5%;
+    
+    }
+    .vote-count-num{
+      
+        
+        height: 30px;
+        width: 48px;
+        color: #10162F;
+        font-size: 17px;
+        font-weight: 600;
+    
+    
+    }
+    .vote-count-num{
+       
+        height: 30px;
+        width: 48px;
+        color: #10162F;
+        font-size: 17px;
+        font-weight: 600;
+    
+    
+    }
+    .actual-comment{
+        margin-top: -12%;
+    }
+    
+.vote-sec-content h1{
+    font-size: 20px;
+}
+.actual-comment p{
+    font-size: 14px;
+  
+    line-height: 15px !important;
+}
+.comment-section{
+
+    margin-right: 0 !important ;
+   
+}
+.comment-para{
+    width: 82% !important;
+}
+.profile-pic{
+
+    margin-top: 2%;
+    width: 15% !important;
+    display: flex;
+    position: relative !important;
+    z-index: 1000;
+
+}
+.profile-pic img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: sticky !important;
+    top: 10px;
+  
+  
+}
+.likes-views-section{
+
+display: none !important;
+}
+.likes-views-section-mobile{
+ 
+    background-color: #F5F6FC;
+  display: block !important;
+    margin-left: 0% !important;
+    margin-right: 2% !important;
+    height: auto;
+    width: auto;
+    border: 1px solid rgb(210, 200, 200);
+
+}
+.row1,.row2{
+    display: flex;
+    justify-content: space-between ;
+}
+.pfs{
+    display: flex !important;
+    align-items: start !important;
+    justify-content: start !important;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.likes-view-content{
+    display: flex;
+    flex-direction: column;
+}
+.mob-divider{
+    background-color: #b7c3c9;
+    height: 0.7px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+  
+}
+
+
     
 
 } 
@@ -185,6 +338,7 @@ body{
   margin-left: 3%;
   margin-right: 3%;
   height: 65px;
+  width: auto;
   border: 1px solid rgb(210, 200, 200);
 }
 
@@ -262,6 +416,16 @@ margin-left: 5%;
     background-color: #263edd;
     transition: background-color 0.4s ease;
 }
+.additional-content {
+    display: none;
+    background-color: #ECF5F9;
+    border: 1px solid rgb(210, 200, 200);
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 10px;
+    width: 100%;
+}
 .divider{
     width: 83%;
     background-color: rgb(220, 212, 212);
@@ -302,3 +466,13 @@ margin-left: 5%;
     margin-right: 4px;
     
 }
+.expanded {
+    height: auto;
+  }
+  
+  .likes-views-section-mobile{
+    display: none;
+  }
+  .likes-views-section-tablets{
+    display: none;
+  }

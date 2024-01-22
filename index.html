@@ -18,10 +18,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <h1>TechSnap Forums</h1>
         <p>Welcome to the friendliest place for anyone learning to code!</p>
-    </div>
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+   
+   $(document).ready(function() {
+ $("#icon").click(function() {
+    $("#hiddenContent").toggle();
+ });
+});
+    </script>
+
+
     <div class="Content-section">
         
         <div class="vote-section">
@@ -57,7 +68,8 @@
                 <p>We appreciate there is still a level of nuance and grey area as AI continues to develop, and we know we’ll likely have to adjust our AI policies as the technology advances. In the meantime, we thank you for understanding and abiding by our guidelines.</p>
                 <p>Happy coding!</p>
             </div>
-            <div class="likes-views-section">
+            <!-- for desktop view -->
+            <div class="likes-views-section" id="likesViewsSection">
                 <div class="likes-view-content">
                 <div class="create-reply">
                     <p>created</p>
@@ -89,7 +101,7 @@
                 </div>
                 <div class="views-likes">
                     <h3>7<h3>
-                    <p>Links</p>
+                    <p>Likes</p>
                 </div>
                 <div class="views-likes">
                     <h3>2<h3>
@@ -100,14 +112,117 @@
                     <img src="./Assests//pf2.jpeg" alt="">
                     <img src="./Assests//pf.jpeg" alt="">
                     <img src="./Assests//pf3.jpeg" alt="">
+                    <img src="./Assests//pf2.jpeg" alt="">
                 </div>
             </div>
-            <div class="icon">
-                <i class="fa-solid fa-angle-down fa-2xl "></i>
-            </div>
+           
+        
              
             </div>
-           
+
+            <!-- for tablets -->
+            <div class="likes-views-section-tablets">
+                <div class="likes-view-content">
+                    <div class="row1">
+                        <div class="create-reply">
+                            <p>created</p>
+                            <div class="create-reply-img">
+                                <img src="./Assests/pf3.jpeg" alt="">
+                                <p>Jan' 24</p>
+                            </div>
+                        </div>
+                        <div class="create-reply">
+                            <p>last reply</p>
+                            <div class="create-reply-img">
+                                <img src="./Assests/pf.jpeg" alt="">
+                                <p>Jan' 24</p>
+                            </div>
+                        </div>
+                        <div class="views-likes">
+                            <h3>3<h3>
+                            <p>Replies</p>
+                        </div>
+                     
+                        <div class="views-likes">
+                            <h3>986<h3>
+                            <p>Views</p>
+                        </div>
+                        <div class="views-likes">
+                            <h3>4<h3>
+                            <p>Users</p>
+                        </div>
+                        <div class="views-likes">
+                            <h3>7<h3>
+                            <p>Likes</p>
+                        </div>
+                        <div class="views-likes">
+                            <h3>2<h3>
+                            <p>Links</p>
+                    </div>
+                   
+             
+                  </div>
+                  <div class="mob-divider"></div>
+                   <div class="pfs">
+                        <img src="./Assests//pf2.jpeg" alt="">
+                        <img src="./Assests//pf.jpeg" alt="">
+                        <img src="./Assests//pf3.jpeg" alt="">
+                        <img src="./Assests//pf2.jpeg" alt="">
+                    </div>
+                </div>
+             </div>
+            <!-- For mobile view -->
+         <div class="likes-views-section-mobile">
+            <div class="likes-view-content">
+                <div class="row1">
+                    <div class="create-reply">
+                        <p>created</p>
+                        <div class="create-reply-img">
+                            <img src="./Assests/pf3.jpeg" alt="">
+                            <p>Jan' 24</p>
+                        </div>
+                    </div>
+                    <div class="create-reply">
+                        <p>last reply</p>
+                        <div class="create-reply-img">
+                            <img src="./Assests/pf.jpeg" alt="">
+                            <p>Jan' 24</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mob-divider"></div>
+              <div class="row2">
+                <div class="views-likes">
+                    <h3>3<h3>
+                    <p>Replies</p>
+                </div>
+             
+                <div class="views-likes">
+                    <h3>986<h3>
+                    <p>Views</p>
+                </div>
+                <div class="views-likes">
+                    <h3>4<h3>
+                    <p>Users</p>
+                </div>
+                <div class="views-likes">
+                    <h3>7<h3>
+                    <p>Likes</p>
+                </div>
+                <div class="views-likes">
+                    <h3>2<h3>
+                    <p>Links</p>
+                </div>
+              </div>
+              <div class="mob-divider"></div>
+               <div class="pfs">
+                    <img src="./Assests//pf2.jpeg" alt="">
+                    <img src="./Assests//pf.jpeg" alt="">
+                    <img src="./Assests//pf3.jpeg" alt="">
+                    <img src="./Assests//pf2.jpeg" alt="">
+                </div>
+            </div>
+         </div>
                
             </div>
            
@@ -163,6 +278,7 @@
             </div>
           
         </div>
+        <div class="divider"></div>
         <div class="reply-button">
             <button><i class="fa-solid fa-reply fa-xs"></i>Reply</button>
         </div>
