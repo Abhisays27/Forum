@@ -5,7 +5,6 @@ body{
     background-color: #F2FBFF;
     height: auto;
 
-  position: relative;
     overflow-x: hidden !important;
 	margin: 0;
 	padding: 0;
@@ -22,7 +21,7 @@ body{
     margin-left: 12% ;
     margin-right: 12%;
     margin-bottom: 5%;
-    position: relative!important;
+
     
     font-family: "Inter", sans-serif !important;
    
