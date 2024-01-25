@@ -252,7 +252,7 @@ display: none !important;
 
 .vote-section-heading{
     font-size: 25px;
-    
+    z-index: 1000;
 
 position: sticky !important;
 top: 60px;
