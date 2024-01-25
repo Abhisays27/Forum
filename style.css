@@ -5,7 +5,7 @@ body{
     background-color: #F2FBFF;
     height: auto;
 
-  
+  position: relative;
     overflow-x: hidden !important;
 	margin: 0;
 	padding: 0;
@@ -31,6 +31,7 @@ body{
     border-radius: 25px !important;
     border: 1px solid rgb(218, 209, 209);
     margin-top: 3%;
+  
  
 
 }
@@ -60,6 +61,7 @@ body{
          
             background-color: #F5F6FC;
           display: block !important;
+          margin-bottom: 2%;
             margin-left: 0% !important;
             margin-right: 2% !important;
             height: auto;
@@ -147,7 +149,7 @@ Mobile */
     
     }
     .actual-comment{
-        margin-top: -12%;
+        margin-top: -7%;
     }
     
 .vote-sec-content h1{
@@ -189,6 +191,7 @@ Mobile */
   
 }
 
+
 .likes-views-section{
 
 display: none !important;
@@ -200,6 +203,7 @@ display: none !important;
     margin-left: 0% !important;
     margin-right: 2% !important;
     margin-top: 8%;
+    margin-bottom: 4%;
     height: auto;
     width: auto;
     border: 1px solid rgb(210, 200, 200);
@@ -329,6 +333,34 @@ flex-direction: column;
    
     cursor: pointer;
 }
+.replyButton-main-sec{
+    display: flex;
+    justify-content: center;
+align-items: center;
+margin-top: 2%;
+}
+
+.replyButton-main-sec button {
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #00ED64;
+    color: #ffffff;
+    border: 1px solid #00ED64;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .replyButton-main-sec button i {
+    margin-right: 5px;
+  }
+  
+  .replyButton-main-sec button:hover {
+    background-color: #007E3D; /* Change color on hover */
+  }
 
 .comment-section{
     display: flex;
@@ -395,6 +427,7 @@ flex-direction: column;
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 2%;
+  margin-bottom: 2%;
   height: 65px;
   width: auto;
   border: 1px solid rgb(210, 200, 200);
@@ -627,7 +660,7 @@ cursor: pointer;
 }
 
 .replyButton-editor{
-    background-color: #72d09a;
+    background-color: #00ED64;
     color: black;
     border-radius: 10px;
     font-size: 14px;

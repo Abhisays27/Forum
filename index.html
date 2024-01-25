@@ -152,7 +152,8 @@
     <div class="Content-section">
 
         <div class="vote-section">
-            <div class="vote-sec-content">
+          
+            <div class="vote-sec-content" id="sticky-header">
                 <h1>Techsnap Intigrity Policy</h1>
                 <p> <i class="fa-sharp fa-solid fa-square" style="background-color:#324593 ;"></i>HQ Announcments <span>
                         4 votes</span></p>
@@ -162,7 +163,18 @@
                 <p class="vote-count-num">4</p>
                 <button>Votes</button>
             </div>
-
+            <script>
+                window.onscroll = function() {
+                    var header = document.getElementById("header");
+                    var h1 = header.querySelector("h1");
+            
+                    if (window.scrollY > header.offsetTop) {
+                        h1.classList.add("h1-fixed");
+                    } else {
+                        h1.classList.remove("h1-fixed");
+                    }
+                };
+            </script>
 
         </div>
         <div class="main-content">
@@ -221,22 +233,10 @@
                                         </svg>
                                     </label>
                                 </div>
-                                <div class="replyButton">
-                                    <i class="fa-solid fa-reply" style="color: #00ED64"></i> Reply
-                                </div>
+                           
                             </div>
                         </div>
-                        <div class="comment-editor">
-                            <div id="editor">
-
-                            </div>
-                            <div class="reply-close">
-                                <div class="replyButton-editor">
-                                    <i class="fa-solid fa-reply" style="color: #050505"></i> Reply
-                                </div>
-                                <span class="Close-Button">Close</span>
-                            </div>
-                        </div>
+                        
 
                         <div class="main-reply-comment" style="display: none;">
 
@@ -312,70 +312,15 @@
                                         <p>Links</p>
                             </div>
 
-                            <div class="pfs">
-                                <img src="./Assests//pf2.jpeg" alt="">
-                                <img src="./Assests//pf.jpeg" alt="">
-                                <img src="./Assests//pf3.jpeg" alt="">
-                                <img src="./Assests//pf2.jpeg" alt="">
-                            </div>
+                            
                         </div>
 
 
 
                     </div>
-
+                  
                     <!-- for tablets -->
 
-                    <div class="likes-views-section-tablets">
-                        <div class="likes-view-content">
-                            <div class="row1">
-                                <div class="create-reply">
-                                    <p>created</p>
-                                    <div class="create-reply-img">
-                                        <img src="./Assests/pf3.jpeg" alt="">
-                                        <p>Jan' 24</p>
-                                    </div>
-                                </div>
-                                <div class="create-reply">
-                                    <p>last reply</p>
-                                    <div class="create-reply-img">
-                                        <img src="./Assests/pf.jpeg" alt="">
-                                        <p>Jan' 24</p>
-                                    </div>
-                                </div>
-                                <div class="views-likes">
-                                    <h3>3<h3>
-                                            <p>Replies</p>
-                                </div>
-
-                                <div class="views-likes">
-                                    <h3>986<h3>
-                                            <p>Views</p>
-                                </div>
-                                <div class="views-likes">
-                                    <h3>4<h3>
-                                            <p>Users</p>
-                                </div>
-                                <div class="views-likes">
-                                    <h3>7<h3>
-                                            <p>Likes</p>
-                                </div>
-                                <div class="views-likes">
-                                    <h3>2<h3>
-                                            <p>Links</p>
-                                </div>
-
-
-                            </div>
-                            <div class="mob-divider"></div>
-                            <div class="pfs">
-                                <img src="./Assests//pf2.jpeg" alt="">
-                                <img src="./Assests//pf.jpeg" alt="">
-                                <img src="./Assests//pf3.jpeg" alt="">
-                                <img src="./Assests//pf2.jpeg" alt="">
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- For mobile view -->
                     <div class="likes-views-section-mobile">
@@ -421,13 +366,24 @@
                                 </div>
                             </div>
                             <div class="mob-divider"></div>
-                            <div class="pfs">
-                                <img src="./Assests//pf2.jpeg" alt="">
-                                <img src="./Assests//pf.jpeg" alt="">
-                                <img src="./Assests//pf3.jpeg" alt="">
-                                <img src="./Assests//pf2.jpeg" alt="">
-                            </div>
+                         
                         </div>
+                    </div>
+                    <div class="comment-editor">
+                        <div id="editor">
+
+                        </div>
+                        <div class="reply-close">
+                            <div class="replyButton-editor">
+                                <i class="fa-solid fa-reply" style="color: #050505"></i> Reply
+                            </div>
+                            <span class="Close-Button">Close</span>
+                        </div>
+                    </div>
+                    <div class="replyButton-main-sec">
+                        <button>
+                        <i class="fa-solid fa-reply" style="color: #ffffff"></i> Reply
+                    </button>
                     </div>
 
                 </div>
@@ -594,6 +550,17 @@
                 $(document).ready(function () {
     // Click event for the "Reply" button
     $('.replyButton').click(function () {
+      $('.comment-editor').show();
+    });
+
+    // Click event for the "Close" button
+    $('.Close-Button').click(function () {
+      $('.comment-editor').hide();
+    });
+  });
+  $(document).ready(function () {
+    // Click event for the "Reply" button
+    $('.replyButton-main-sec button').click(function () {
       $('.comment-editor').show();
     });
 
