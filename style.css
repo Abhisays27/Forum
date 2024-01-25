@@ -22,6 +22,7 @@ body{
     margin-left: 12% ;
     margin-right: 12%;
     margin-bottom: 5%;
+    font-family: "Inter", sans-serif !important;
    
     
   
@@ -153,6 +154,7 @@ Mobile */
     font-size: 20px;
 }
 .actual-comment p{
+    
     font-size: 14px;
   
     line-height: 15px !important;
@@ -268,7 +270,7 @@ display: none !important;
 .vote-sec-content{
 display: flex;
 flex-direction: column;
-    font-family: "Lato", sans-serif;
+
 }
 
 
@@ -362,7 +364,7 @@ flex-direction: column;
 }
 .name-date  p{
     color: #324593;
-    font-family: "Questrial", sans-serif;
+    font-family: "Inter", sans-serif !important;
 
 }
 .name-date h6{
@@ -377,13 +379,13 @@ flex-direction: column;
 
 }
 .main-content p{
-    font-family: "Lato", sans-serif;
+    font-family: "Inter", sans-serif !important;
 }
 .main-content{
     background-color: white;
 }
 .actual-comment p{
-    font-family: "Nunito", sans-serif !important;
+    mily: "Inter", sans-serif;
     line-height: 35px;
 }
 .likes-views-section{
