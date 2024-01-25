@@ -18,7 +18,7 @@ body{
 
 
 .Content-section{
-    margin-top: 5%;
+    margin-top: 1% !important;
     margin-left: 12% ;
     margin-right: 12%;
     margin-bottom: 5%;
@@ -364,7 +364,7 @@ margin-top: 2%;
 
 .comment-section{
     display: flex;
-    margin-top: 3%;
+
     border-radius: 30px ;
     width: 100%;
     height: auto !important;
